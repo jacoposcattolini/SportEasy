@@ -61,7 +61,14 @@ connessioni (`backend/src/config/db.js`).
 
 Dalla cartella del progetto:
 
-### 1. Prepara le variabili d'ambiente
+### 1. Istruzioni
+
+```bash
+git clone https://github.com/jacoposcattolini/SportEasy
+cd SportEasy
+```
+
+### 2. Prepara le variabili d'ambiente
 
 Copia il file di esempio in `.env`:
 
@@ -73,7 +80,7 @@ I valori predefiniti sono già pronti per l'uso locale (utente e password del
 database, chiave di firma dei token, credenziali del pannello admin). Non serve
 modificarli per far partire l'app.
 
-### 2. Avvia lo stack
+### 3. Avvia lo stack
 
 ```bash
 docker compose up --build
@@ -82,7 +89,7 @@ docker compose up --build
 Il comando costruisce e avvia i tre servizi: database, backend e frontend. La
 prima build è la più lenta; gli avvii successivi sono rapidi.
 
-### 3. Creazione e popolamento del database (automatici)
+### 4. Creazione e popolamento del database (automatici)
 
 Non serve alcun passaggio manuale:
 
@@ -101,7 +108,7 @@ docker compose down -v
 docker compose up --build
 ```
 
-### 4. Apri l'applicazione
+### 5. Apri l'applicazione
 
 | Indirizzo | Cosa |
 |---|---|
