@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 // anche dal telefono sulla stessa rete Wi-Fi.
 export default defineConfig({
   plugins: [react()],
+  base: '/SportEasy/', // <-- AGGIUNGI QUESTA RIGA QUI
   server: {
     host: true,
     port: 5173,
